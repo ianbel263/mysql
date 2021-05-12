@@ -48,25 +48,25 @@ ALTER TABLE likes
 		FOREIGN KEY (user_id) REFERENCES users(id)
 			ON DELETE SET NULL;
 
-ALTER TABLE likes 
-	ADD CONSTRAINT likes_message_id_fk
-		FOREIGN KEY (target_id) REFERENCES messages(id)
-			ON DELETE CASCADE;
+-- ALTER TABLE likes 
+-- 	ADD CONSTRAINT likes_message_id_fk
+-- 		FOREIGN KEY (target_id) REFERENCES messages(id)
+-- 			ON DELETE CASCADE;
 				
-ALTER TABLE likes 
-	ADD CONSTRAINT likes_media_id_fk
-		FOREIGN KEY (target_id) REFERENCES media(id)
-			ON DELETE CASCADE;
+-- ALTER TABLE likes 
+-- 	ADD CONSTRAINT likes_media_id_fk
+-- 		FOREIGN KEY (target_id) REFERENCES media(id)
+-- 			ON DELETE CASCADE;
 
-ALTER TABLE likes 
-	ADD CONSTRAINT likes_user_like_id_fk
-		FOREIGN KEY (target_id) REFERENCES users(id)
-			ON DELETE CASCADE;
+-- ALTER TABLE likes 
+-- 	ADD CONSTRAINT likes_user_like_id_fk
+-- 		FOREIGN KEY (target_id) REFERENCES users(id)
+-- 			ON DELETE CASCADE;
 
-ALTER TABLE likes 
-	ADD CONSTRAINT likes_post_id_fk
-		FOREIGN KEY (target_id) REFERENCES posts(id)
-			ON DELETE CASCADE;
+-- ALTER TABLE likes 
+-- 	ADD CONSTRAINT likes_post_id_fk
+-- 		FOREIGN KEY (target_id) REFERENCES posts(id)
+-- 			ON DELETE CASCADE;
 		
 DESC media;
 
